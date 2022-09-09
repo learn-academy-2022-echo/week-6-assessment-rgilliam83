@@ -6,10 +6,19 @@
 
 # FILE: app/controller/blog_posts_controller.rb
 
-# ---1)
+# ---1) rails created all the files associated with this particular controller. the output in the terminal would be as follows:
+        # create app/controller/blog_posts_controller.rb
+        #     invoke erb
+        #     create   app/views/main
+        #     invoke helper
+        #     create   app/helpers/main_helper.rb
+        #     invoke assets
+        #     invoke   scss
+        #     create     app/assets/stylesheets/main.scss
+
 class BlogPostsController < ApplicationController
   def index
-    # ---2)
+    # ---2) The controller is responsible for routing external requests to internal actions. Inside the controller, what the developer wants to happen is being defined. Through the ApplicationController to the BlogPostController. when the index method is triggered, the higher order function BlogPost.all is activated.
     @posts = BlogPost.all
   end
 
