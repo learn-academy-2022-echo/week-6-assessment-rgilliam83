@@ -8,9 +8,9 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. As a developer, I am creating a Rails application with a model called Cohort that has_many students, but OOPS! I forgot to add the foreign key. How can I fix this mistake? What is the name of the foreign key? Would the foreign key be on the Cohort model or the Student model?
 
-Your answer: you would add the foreign key through migration
+Your answer: you would add the foreign key through a new migration generated in rails. To keep tract of changes, the most recent migration will be named foreign_key_students. In the above example, it was explained that a foreign key was not initially added and needed to be added after the rails application was created. So, a new, updated, version of the rails application had to be created.  In the foreign_key_students migration, using new_column to add a new column for the foreign key. This foreign key, cohort_id, will refer to the cohort table.
 
-Researched answer:
+Researched answer: Migrations are a way to alter the database schema in real time, creating a updated version of the database. 
 
 2. Which RESTful routes must always be passed params? Why?
 
