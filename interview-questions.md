@@ -27,17 +27,47 @@ Researched answer: Rails g model creates a model that handles the data in the da
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
 action: "GET" location: /students
+    Index method would be used here. .all is most like the record query used to display all data, which can be verified by looking in the controller.
 
 action: "POST" location: /students
+    CREATE is the controller method used here. This will add a new student to the database.
 
 action: "GET" location: /students/new
+    NEW is the controller method used here. This will display an HTML form to create a new student. 
 
 action: "GET" location: /students/2
+    SHOW is the controller method used here. specifically, student id 2 information will be shown.
 
 action: "GET" location: /students/2/edit
+    EDIT is the controller method used here. Student id 2 will be modified in database.
 
 action: "PATCH" location: /students/2
+    UPDATE is the controller method used here. after changes made to student id 2, this will update the changes through migration.
 
 action: "DELETE" location: /students/2
+    DESTROY is the method used here. All information about student id 2 will be deleted from database.
+
+
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
+
+    As a developer: 
+        I can see all task prioritized by level of importance  on home page.
+        
+        I can select specific task and be routed to where title, date, time, description, and status of task item is shown.
+        
+        I can go back to home page from show page by clicking link in nav bar.
+        
+        I can add new task to list using button.
+        
+        A new task form will add new task to list.
+        
+        Submit button on from will allow task list to be updated with new task.
+        
+        I can click on a link to navigate back from New Page to the Home page.
+    
+        I can delete task from list by clicking button.
+    
+        I can click on a button that will direct me to Edit To-Do List Item page.
+        
+        I can click on a button that will update my To-Do List Item.
